@@ -1361,7 +1361,7 @@ def show_app():
                 # Show uploaded image
                 from PIL import Image
                 image = Image.open(uploaded_file)
-                st.image(image, caption="Uploaded MRI Scan", width="stretch")
+                st.image(image, caption="Uploaded MRI Scan", use_column_width=True)
 
             bt_btn = st.button("🔍 Analyze MRI Scan", key="bt_predict_btn", use_container_width=True)
 
