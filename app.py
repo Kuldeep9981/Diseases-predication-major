@@ -273,11 +273,11 @@ def show_app():
       </div>
       <div style="display:flex; gap:10px; flex-wrap:wrap;">
         <span style="background:rgba(56,189,248,.12); color:#38bdf8; border:1px solid rgba(56,189,248,.3);
-                     border-radius:20px; padding:5px 14px; font-size:12px; font-weight:600;">XGBoost ML</span>
+                     border-radius:20px; padding:5px 14px; font-size:12px; font-weight:600;">SATI</span>
         <span style="background:rgba(129,140,248,.12); color:#818cf8; border:1px solid rgba(129,140,248,.3);
-                     border-radius:20px; padding:5px 14px; font-size:12px; font-weight:600;">ResNet50 DL</span>
+                     border-radius:20px; padding:5px 14px; font-size:12px; font-weight:600;">AIADS</span>
         <span style="background:rgba(52,211,153,.12); color:#34d399; border:1px solid rgba(52,211,153,.3);
-                     border-radius:20px; padding:5px 14px; font-size:12px; font-weight:600;">SHAP + Grad-CAM</span>
+                     border-radius:20px; padding:5px 14px; font-size:12px; font-weight:600;">2022-2026</span>
       </div>
     </div>
     """, unsafe_allow_html=True)
