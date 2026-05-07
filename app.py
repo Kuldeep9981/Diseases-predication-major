@@ -6,6 +6,7 @@ import time
 import pickle
 import random
 from auth import init_db, signup_user, signin_user
+import keras
 
 
 # ─────────────────────────────────────────────
