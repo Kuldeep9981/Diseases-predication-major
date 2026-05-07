@@ -3,7 +3,5 @@ pandas
 numpy
 plotly
 scikit-learn
-tensorflow
-keras
-pillow
+
 
