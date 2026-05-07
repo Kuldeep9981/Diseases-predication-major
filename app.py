@@ -1375,9 +1375,9 @@ def show_app():
                     fake_predict_bar("Analyzing MRI scan with deep learning model…")
 
                     try:
+                        # Load model
                         with open("brain_tumor_model.pkl", "rb") as f:
                             brain_model = pickle.load(f)
-                            st.success("✅ Model loaded from pickle file")
                        
                         
 
