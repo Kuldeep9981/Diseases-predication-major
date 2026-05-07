@@ -7,8 +7,7 @@ import pickle
 import random
 from auth import init_db, signup_user, signin_user
 import tensorflow as tf
-from tensorflow import keras
-from tensorflow.keras.models import load_model
+
 
 
 
@@ -1376,15 +1375,11 @@ def show_app():
                     fake_predict_bar("Analyzing MRI scan with deep learning model…")
 
                     try:
-                        # Load model
-                        try:
-                            with open("brain_tumor_model.pkl", "rb") as f:
-                                brain_model = pickle.load(f)
+                        with open("brain_tumor_model.pkl", "rb") as f:
+                            brain_model = pickle.load(f)
                             st.success("✅ Model loaded from pickle file")
                        
-                        except Exception as e:
-                            st.warning(f"Pickle load failed: {e}, trying H5 format...")
-                            brain_model = load_model("brain_tumor_model.h5")
+                        
 
                         # Preprocess image — same as training
                         image = Image.open(uploaded_file).convert("RGB")
